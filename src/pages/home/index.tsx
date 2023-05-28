@@ -1,23 +1,13 @@
-import React, { FC } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { FC } from "react";
 
 interface IProps {}
 
 const Home: FC<IProps> = (props) => {
-  const navigate = useNavigate()
-
   return (
     <div>
-      Home
-      <div
-        onClick={() => {
-          navigate(`/page1`)
-        }}
-      >
-        跳转
-      </div>
+      <h1>Project1</h1>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
